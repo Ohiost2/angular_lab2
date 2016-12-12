@@ -1,0 +1,29 @@
+<p>
+  <!-- Input is bound to the onConvertme property -->
+  <!-- The default value is set -->
+ <!-- The # syntax indicates a template reference varible -->
+ <!-- Which can be accessed directly --> 
+  Miles: 
+  <input #milesInput milesInput.value='' />
+
+<!-- myMessage.value is passed as a parameter to the onClickMe method -->
+<button (click)="onConvertmeM(milesInput.value)">Convert!</button>
+</p>
+
+<p>
+Kilometers: {{kilometers}}
+</p>
+
+<p>
+   Kilometers: 
+  <input #kilometersInput kilometersInput.value='' />
+<!-- myMessage.value is passed as a parameter to the onClickMe method -->
+<button (click)="onConvertmeK(kilometersInput.value)">Convert!</button>
+</p>
+
+<p>
+miles: {{miles}}
+</p>
+
+
+
